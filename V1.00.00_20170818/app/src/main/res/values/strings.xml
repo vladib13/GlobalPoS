@@ -1,0 +1,59 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Global PoS (Demo)</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="dialog_delete">Eliminar</string>
+    <string name="dialog_clear">Borrar</string>
+    <string name="dialog_ok">Aceptar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="err_password">Contraseña Incorrecta</string>
+
+    <string name="trans_succ_liff"><xliff:g id="SUCCESS">%1$s</xliff:g>Exitosa</string>
+    <string name="prompt_trans_amount">Monto</string>
+    <string name="amount_default">0.00</string>
+
+    <string name="trans_sale">VENTA</string>
+    <string name="header_title">APPT</string>
+    <string name="ec_trans_amount">Monto de transaccion:</string>
+    <string name="trans_amount">Monto de transaccion</string>
+    <string name="detail_auth_code">Codigo de Autorizacion</string>
+    <string name="detail_trans_no">Numero Serial</string>
+    <string name="trans_oridate">Fecha Original de Transaccion</string>
+    <string name="prompt_use_bankcard">Por favor inserte su tarjeta con chip</string>
+    <string name="prompt_card_num">Numero de Tarjeta</string>
+    <string name="prompt_card_date">Fecha de vencimiento de tarjeta</string>
+    <string name="prompt_date_default">MM/AA</string>
+
+    <string name="view_aid">AID</string>
+    <string name="view_capk">CAPK</string>
+    <string name="view_version">Informacion</string>
+    <string name="view_param">ViewParam</string>
+    <string name="app_version">Acerca de DemoTwiload</string>
+    <string name="trans_balance">Solicitud de Balance</string>
+    <string name="version">Numero de version</string>
+    <string name="remove_card">Por favor retire su tarjeta&#8230;</string>
+    <string name="see_phone">Por favor observe el telefono&#8230;</string>
+    <string name="detect_card_again">Fallo lectura de tarjeta, por favor intente de nuevo</string>
+    <string name="entry_card_password">Por favor introduzca la contraseña de su tarjeta</string>
+    <string name="without_password">Sin contraseña, presione el boton Aceptar</string>
+    <string name="sale_success">Transacion exitosa</string>
+    <string name="transaction_date">fecha de transaccion</string>
+    <string name="skip">Saltar</string>
+    <string name="amount">monto</string>
+    <string name="version1">DemoTwiload 1.00.00</string>
+    <string name="versionInfo">Copyright (C) 2017-? PAX Technology, Inc. All rights reserved.</string>
+    <string name="read_card_error">error de lectura de tarjeta</string>
+    <string name="title_activity_release_notes">ActividadNotasLanzamiento</string>
+    <string name="release_notes">Version inicial 1.00.00 publicada.
+        \nSoporta PayPass y PayWave.
+    </string>
+
+    <string name="prompt_online">Procesando en linea...</string>
+    <string name="prompt_offline">Aprobado fuera de linea...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version_date">2017/03/27</string>
+    <string name="user_cancel">Cancelado por usuario</string>
+    <string name="password_time_out">Expiro su tiempo para introducir contraseña</string>
+</resources>

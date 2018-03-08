@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_style"
+    android:orientation="vertical"
+    tools:context="com.pax.tradepaypw.EnvioReciboActivity"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/txtRecibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/txt"
+        android:textSize="35dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/app"
+        android:text="Modalidad de Recibo"/>
+
+    <Button
+
+        android:id="@+id/btnPrinter"
+        android:layout_width="269dp"
+        android:layout_below="@id/txtRecibo"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_stl"
+        android:drawableTop="@drawable/printer"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/txt"
+        android:text="Impreso"
+        android:layout_weight="0.05"
+        android:onClick="print"/>
+    <Button
+
+        android:id="@+id/btnSMS"
+        android:layout_width="269dp"
+        android:layout_below="@id/btnPrinter"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_stl"
+        android:drawableTop="@drawable/sms"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/txt"
+        android:text="SMS"
+        android:onClick="sms"
+        android:layout_weight="0.05" />
+    <Button
+
+        android:id="@+id/btnMail"
+        android:layout_below="@id/btnSMS"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_stl"
+        android:drawableTop="@drawable/mail"
+        android:textColor="@color/txt"
+        android:text="Correo"
+        android:onClick="mail"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_below="@+id/btnPrinter"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtInput"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_stl"
+            android:textColor="@color/txt"
+            android:id="@+id/btnEnviar"
+            android:onClick="send"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"/>
+        <Button
+            android:background="@drawable/btn_stl"
+            android:textColor="@color/txt"
+            android:onClick="change"
+            android:id="@+id/btnRegresar"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_style">
+
+    <ScrollView
+        android:id="@+id/parentscr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app"/>
+            <TextView
+                android:id="@+id/logo"
+                android:text="Global PoS"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    <View
+        android:id="@+id/linea1"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorPrimary">
+    </View>
+    <TextView
+        android:id="@+id/total"
+        android:layout_below="@id/linea1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$ 0.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/ecash_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/total"
+        android:text="23/04/2017 a las 8:20 A.M."
+        android:textSize="@dimen/normal_text_size" />
+
+    <View
+        android:id="@+id/linea2"
+        android:layout_below="@id/ecash_time"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorPrimary">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/montos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linea2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tarjeta_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nro. de tarjeta"
+                android:textColor="@color/txt"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.25"/>
+            <TextView
+                android:id="@+id/ecash_bankcardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010515151515155445"
+                android:textColor="@color/txt"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.75"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/txt">
+
+            <TextView
+                android:id="@+id/subtotal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:id="@+id/ecash_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 0.00"
+                android:textColor="@color/textColor"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/propina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/txt">
+
+            <TextView
+                android:id="@+id/propina_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Propina"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+            <Spinner
+                android:id="@+id/propina_monto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 0.00"
+                android:textColor="@color/textColor"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/linea4"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/colorPrimary">
+        </View>
+        <LinearLayout
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/txt">
+
+            <TextView
+                android:id="@+id/total_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:id="@+id/total_monto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 0.00"
+                android:textColor="@color/textColor"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linea3"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/montos">
+    </View>
+    <LinearLayout
+        android:id="@+id/tablet_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1.00"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/linea3">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linea5"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tablet_view">
+    </View>
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_below="@id/linea5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:onClick="enterClick"
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            style="@style/btnStyle"
+            android:background="@drawable/btn_stl"
+            android:text="Aceptar"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp" />
+        <TextView
+            android:onClick="clear"
+            android:id="@+id/clr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            style="@style/btnStyle"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_stl"
+            android:text="Borrar"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

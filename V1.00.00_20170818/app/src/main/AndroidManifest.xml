@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pax.jemv.demo">
+
+    <uses-permission android:name="com.pax.permission.MAGCARD" />
+    <uses-permission android:name="com.pax.permission.PED" />
+    <uses-permission android:name="com.pax.permission.ICC" />
+    <uses-permission android:name="com.pax.permission.PICC" />
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.pax.app.TradeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.pax.tradepaypw.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pax.tradepaypw.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme" />
+        <activity
+            android:name="com.pax.tradepaypw.SwingCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pax.tradepaypw.ConsumeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pax.tradepaypw.TradeResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme">
+
+        </activity>
+        <activity android:name="com.pax.tradepaypw.ViewParamActivity" />
+        <activity android:name="com.pax.tradepaypw.VersionActivity" />
+        <activity
+            android:name="com.pax.tradepaypw.ReleaseNotesActivity"
+            android:label="@string/title_activity_release_notes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pax.tradepaypw.EntryMenuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pax.tradepaypw.RecargaActivity" />
+        <activity android:name="com.pax.tradepaypw.EnvioReciboActivity">
+
+        </activity>
+        <activity android:name="com.pax.tradepaypw.SignatureActivity"></activity>
+    </application>
+
+</manifest>
